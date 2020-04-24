@@ -1,8 +1,8 @@
 {
   "id": 1,
   "restaurantId": 1,
-  "xCount": 10,
-  "yCount": 10,
+  "xCount": 500,
+  "yCount": 500,
   "characters": [
     {
       "id": 1,
