@@ -21,12 +21,12 @@
         components: {CharacterCmpt, Layout}
     })
     export default class extends Vue {
-        @Prop() readonly dataScheme!: ISchemeDto;
+        @Prop() readonly dataScheme!: string;
 
         scheme: Scheme = new Scheme();
 
         created() {
-            this.scheme = new Scheme(this.dataScheme);
+            this.scheme = new Scheme(JSON.parse(this.dataScheme) as ISchemeDto);
         }
     }
 </script>
