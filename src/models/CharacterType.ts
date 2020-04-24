@@ -9,7 +9,7 @@ export class CharacterType {
     )
     constructor(
         dtoOrId: ICharacterTypeDto | string = "",
-        name: string = "",
+        name = "",
     ) {
         if (typeof dtoOrId !== "string") {
             this.id = String(dtoOrId.id);

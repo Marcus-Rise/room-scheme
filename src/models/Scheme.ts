@@ -17,9 +17,9 @@ export class Scheme {
     )
     constructor(
         dtoOrId: ISchemeDto | string = "",
-        restaurantId: string = "",
-        width: number = 0,
-        height: number = 0,
+        restaurantId = "",
+        width = 0,
+        height = 0,
         characters: Character[] = [],
     ) {
         if (typeof dtoOrId !== "string") {

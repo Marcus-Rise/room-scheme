@@ -20,10 +20,10 @@ export class Character {
     constructor(
         dtoOrId: ICharacterDto | string = "",
         type: CharacterType = new CharacterType(),
-        x: number = 0,
-        y: number = 0,
-        angle: number = 0,
-        schemeId: string = "",
+        x = 0,
+        y = 0,
+        angle = 0,
+        schemeId = "",
     ) {
         if (typeof dtoOrId !== "string") {
             this.id = String(dtoOrId.id);
