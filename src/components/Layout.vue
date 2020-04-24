@@ -21,8 +21,9 @@
     @import "~bootstrap/scss/mixins";
     @import "~bootstrap/scss/card";
 
-    :host {
+    .card-body {
         position: relative;
+        padding: 0;
     }
 
     .layout {

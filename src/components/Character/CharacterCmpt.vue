@@ -11,6 +11,7 @@
     import {Component, Prop, Vue} from "vue-property-decorator";
     import {Character} from "@/models/Character";
     import SimpleCharacter from "@/components/Character/SimpleCharacter.vue";
+    import ChairCharacter from "@/components/Character/ChairCharacter.vue";
 
     @Component
     export default class CharacterCmpt extends Vue {
@@ -20,6 +21,9 @@
             let type: Function;
 
             switch (this.character.type.name) {
+                case "chair":
+                    type = ChairCharacter;
+                    break;
                 case "simple":
                 default:
                     type = SimpleCharacter;
@@ -32,7 +36,7 @@
 </script>
 
 <style lang="scss" scoped>
-    :host {
+    div {
         position: absolute;
     }
 </style>
