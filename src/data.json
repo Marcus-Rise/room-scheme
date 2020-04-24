@@ -1,0 +1,128 @@
+{
+  "id": 1,
+  "restaurantId": 1,
+  "xCount": 10,
+  "yCount": 10,
+  "characters": [
+    {
+      "id": 1,
+      "typeId": 1,
+      "type": {
+        "id": 1,
+        "name": "simple"
+      },
+      "x": 2,
+      "y": 2,
+      "schemeId": 1,
+      "angle": 0
+    },
+    {
+      "id": 2,
+      "typeId": 1,
+      "type": {
+        "id": 1,
+        "name": "simple"
+      },
+      "x": 2,
+      "y": 3,
+      "schemeId": 1,
+      "angle": 0
+    },
+    {
+      "id": 3,
+      "typeId": 1,
+      "type": {
+        "id": 1,
+        "name": "simple"
+      },
+      "x": 2,
+      "y": 4,
+      "schemeId": 1,
+      "angle": 0
+    },
+    {
+      "id": 4,
+      "typeId": 1,
+      "type": {
+        "id": 1,
+        "name": "simple"
+      },
+      "x": 3,
+      "y": 2,
+      "schemeId": 1,
+      "angle": 0
+    },
+    {
+      "id": 5,
+      "typeId": 1,
+      "type": {
+        "id": 1,
+        "name": "simple"
+      },
+      "x": 3,
+      "y": 3,
+      "schemeId": 1,
+      "angle": 0
+    },
+    {
+      "id": 6,
+      "typeId": 1,
+      "type": {
+        "id": 1,
+        "name": "simple"
+      },
+      "x": 3,
+      "y": 4,
+      "schemeId": 1,
+      "angle": 0
+    },
+    {
+      "id": 7,
+      "typeId": 2,
+      "type": {
+        "id": 2,
+        "name": "chair"
+      },
+      "x": 1,
+      "y": 2,
+      "schemeId": 1,
+      "angle": 0
+    },
+    {
+      "id": 8,
+      "typeId": 2,
+      "type": {
+        "id": 2,
+        "name": "chair"
+      },
+      "x": 4,
+      "y": 2,
+      "schemeId": 1,
+      "angle": 0
+    },
+    {
+      "id": 9,
+      "typeId": 2,
+      "type": {
+        "id": 2,
+        "name": "chair"
+      },
+      "x": 1,
+      "y": 4,
+      "schemeId": 1,
+      "angle": 0
+    },
+    {
+      "id": 10,
+      "typeId": 2,
+      "type": {
+        "id": 2,
+        "name": "chair"
+      },
+      "x": 4,
+      "y": 4,
+      "schemeId": 1,
+      "angle": 0
+    }
+  ]
+}
