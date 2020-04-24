@@ -9,7 +9,7 @@
 
     @Component
     export default class extends Vue {
-        @Prop({default: new Scheme()}) readonly scheme!: Scheme;
-
+        @Prop({default: () => new Scheme()}) readonly scheme!: Scheme;
+        @Prop({default: () => []}) readonly dictionaries!: readonly Dictionary[];
     }
 </script>
