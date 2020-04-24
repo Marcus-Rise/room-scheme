@@ -10,6 +10,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target wc --name room-scheme ./src/App.vue",
     "test:unit": "vue-cli-service test:unit",
+    "test:unit:watch": "vue-cli-service test:unit --watch",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
