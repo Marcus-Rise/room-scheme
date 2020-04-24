@@ -3,6 +3,11 @@
         layout(
             :style="{width: `${scheme.width}px`, height: `${scheme.height}px`}"
         )
+            character-cmpt(
+                v-for="item in scheme.characters"
+                :key="item.id"
+                :character="item"
+            )
 </template>
 
 <script lang="ts">
@@ -11,9 +16,10 @@
     import {ISchemeDto, Scheme} from "@/models/Scheme";
     import {Dictionary, IDictionaryDto} from "@/models/Dictionary";
     import Layout from "@/components/Layout.vue";
+    import CharacterCmpt from "@/components/CharacterCmpt.vue";
 
     @Component({
-        components: {Layout}
+        components: {CharacterCmpt, Layout}
     })
     export default class extends Vue {
         @Prop() readonly dataScheme!: ISchemeDto;
@@ -29,6 +35,5 @@
                 this.dictionaries.push(new Dictionary(i));
             });
         }
-
     }
 </script>
