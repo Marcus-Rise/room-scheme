@@ -1,5 +1,5 @@
 <template lang="pug">
-    .card(
+    .card.layout(
         v-bind="$attrs"
         v-on="$listeners"
     )
@@ -20,4 +20,12 @@
     @import "~bootstrap/scss/variables";
     @import "~bootstrap/scss/mixins";
     @import "~bootstrap/scss/card";
+
+    :host {
+        position: relative;
+    }
+
+    .layout {
+        overflow: auto;
+    }
 </style>
