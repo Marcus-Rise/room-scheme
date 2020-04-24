@@ -11,8 +11,8 @@
         "id": 1,
         "name": "simple"
       },
-      "x": 2,
-      "y": 2,
+      "x": 100,
+      "y": 100,
       "schemeId": 1,
       "angle": 0
     },
@@ -23,8 +23,8 @@
         "id": 1,
         "name": "simple"
       },
-      "x": 2,
-      "y": 3,
+      "x": 100,
+      "y": 150,
       "schemeId": 1,
       "angle": 0
     },
@@ -35,8 +35,8 @@
         "id": 1,
         "name": "simple"
       },
-      "x": 2,
-      "y": 4,
+      "x": 100,
+      "y": 200,
       "schemeId": 1,
       "angle": 0
     },
@@ -47,8 +47,8 @@
         "id": 1,
         "name": "simple"
       },
-      "x": 3,
-      "y": 2,
+      "x": 150,
+      "y": 100,
       "schemeId": 1,
       "angle": 0
     },
@@ -59,8 +59,8 @@
         "id": 1,
         "name": "simple"
       },
-      "x": 3,
-      "y": 3,
+      "x": 150,
+      "y": 150,
       "schemeId": 1,
       "angle": 0
     },
@@ -71,8 +71,8 @@
         "id": 1,
         "name": "simple"
       },
-      "x": 3,
-      "y": 4,
+      "x": 150,
+      "y": 200,
       "schemeId": 1,
       "angle": 0
     },
@@ -83,8 +83,8 @@
         "id": 2,
         "name": "chair"
       },
-      "x": 1,
-      "y": 2,
+      "x": 50,
+      "y": 100,
       "schemeId": 1,
       "angle": 0
     },
@@ -95,8 +95,8 @@
         "id": 2,
         "name": "chair"
       },
-      "x": 4,
-      "y": 2,
+      "x": 200,
+      "y": 100,
       "schemeId": 1,
       "angle": 0
     },
@@ -107,8 +107,8 @@
         "id": 2,
         "name": "chair"
       },
-      "x": 1,
-      "y": 4,
+      "x": 50,
+      "y": 200,
       "schemeId": 1,
       "angle": 0
     },
@@ -119,8 +119,8 @@
         "id": 2,
         "name": "chair"
       },
-      "x": 4,
-      "y": 4,
+      "x": 200,
+      "y": 200,
       "schemeId": 1,
       "angle": 0
     }
