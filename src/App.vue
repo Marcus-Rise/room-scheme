@@ -16,7 +16,7 @@
     import {ISchemeDto, Scheme} from "@/models/Scheme";
     import {Dictionary, IDictionaryDto} from "@/models/Dictionary";
     import Layout from "@/components/Layout.vue";
-    import CharacterCmpt from "@/components/CharacterCmpt.vue";
+    import CharacterCmpt from "@/components/Character/CharacterCmpt.vue";
 
     @Component({
         components: {CharacterCmpt, Layout}

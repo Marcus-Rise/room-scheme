@@ -10,7 +10,7 @@
 <script lang="ts">
     import {Component, Prop, Vue} from "vue-property-decorator";
     import {Character} from "@/models/Character";
-    import SimpleCharacter from "@/components/SimpleCharacter.vue";
+    import SimpleCharacter from "@/components/Character/SimpleCharacter.vue";
 
     @Component
     export default class CharacterCmpt extends Vue {
