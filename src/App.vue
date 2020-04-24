@@ -1,20 +1,34 @@
 <template lang="pug">
     #app
-        layout
+        layout(
+            :style="{width: `${scheme.width}px`, height: `${scheme.height}px`}"
+        )
 </template>
 
 <script lang="ts">
     import Vue from 'vue';
     import {Component, Prop} from "vue-property-decorator";
-    import {Scheme} from "@/models/Scheme";
-    import {Dictionary} from "@/models/Dictionary";
+    import {ISchemeDto, Scheme} from "@/models/Scheme";
+    import {Dictionary, IDictionaryDto} from "@/models/Dictionary";
     import Layout from "@/components/Layout.vue";
 
     @Component({
         components: {Layout}
     })
     export default class extends Vue {
-        @Prop({default: () => new Scheme()}) readonly scheme!: Scheme;
-        @Prop({default: () => []}) readonly dictionaries!: readonly Dictionary[];
+        @Prop() readonly dataScheme!: ISchemeDto;
+        @Prop() readonly dataDictionaries!: readonly IDictionaryDto[];
+
+        scheme: Scheme = new Scheme();
+        dictionaries: Dictionary[] = [];
+
+        created() {
+            this.scheme = new Scheme(this.dataScheme);
+
+            this.dataDictionaries.forEach((i) => {
+                this.dictionaries.push(new Dictionary(i));
+            });
+        }
+
     }
 </script>
