@@ -12,7 +12,8 @@
     "test:unit": "vue-cli-service test:unit",
     "test:unit:watch": "vue-cli-service test:unit --watch",
     "lint": "vue-cli-service lint",
-    "lint:fix": "vue-cli-service lint --fix"
+    "lint:fix": "vue-cli-service lint --fix",
+    "demo": "serve dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.8.2",
@@ -41,6 +42,7 @@
     "pug-plain-loader": "^1.0.0",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
+    "serve": "^11.3.0",
     "typescript": "~3.8.3",
     "vue-template-compiler": "^2.6.11"
   }
