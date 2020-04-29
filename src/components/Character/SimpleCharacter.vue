@@ -1,5 +1,5 @@
 <template lang="pug">
-    div(
+    .simple-character(
         :style="{ left: `${x}px`, bottom: `${y}px`, }"
     )
 </template>
@@ -16,7 +16,7 @@
 </script>
 
 <style lang="scss" scoped>
-    div {
+    .simple-character {
         $size: 50px;
 
         width: $size;

@@ -1,5 +1,5 @@
 <template lang="pug">
-    component(
+    component.character(
         :is="type"
         :x="character.x"
         :y="character.y"
@@ -36,7 +36,7 @@
 </script>
 
 <style lang="scss" scoped>
-    div {
+    .character {
         position: absolute;
     }
 </style>
