@@ -1,7 +1,8 @@
 <template lang="pug">
     #app
         layout(
-            :style="{width: `${scheme.width}px`, height: `${scheme.height}px`}"
+            :width="scheme.width"
+            :height="scheme.height"
         )
             character-cmpt(
                 v-for="item in scheme.characters"
