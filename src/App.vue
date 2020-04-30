@@ -9,7 +9,6 @@
             )
                 choosable(
                     v-if="item.type.name === 'chair'"
-                    @click="click(item)"
                 )
                     character-cmpt(
                         :character="item"
@@ -27,7 +26,6 @@
     import Vue from "vue";
     import {Component, Prop} from "vue-property-decorator";
     import {ISchemeDto, Scheme} from "@/models/Scheme";
-    import {Character} from "@/models/Character";
     import CharacterCmpt from "@/components/Character/CharacterCmpt.vue";
     import Choosable from "@/components/Choosable.vue";
     import Layout from "@/components/Layout.vue";
@@ -44,8 +42,5 @@
             this.scheme = new Scheme(JSON.parse(this.dataScheme) as ISchemeDto);
         }
 
-        click(item: Character) {
-            console.log("dawdawd", item.id);
-        }
     }
 </script>
