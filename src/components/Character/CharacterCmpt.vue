@@ -1,9 +1,7 @@
 <template lang="pug">
     component.character(
         :is="type"
-        :x="character.x"
-        :y="character.y"
-        :angle="character.angle"
+        :style="style"
     )
 </template>
 
@@ -31,6 +29,14 @@
             }
 
             return type;
+        }
+
+        get style() {
+            return {
+                left: `${this.character.x}px`,
+                bottom: `${this.character.y}px`,
+                transform: `rotate(${this.character.angle}deg)`
+            }
         }
     }
 </script>
