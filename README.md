@@ -1,5 +1,9 @@
 # room-scheme
 
+## Demo 
+
+https://unpkg.com/@marcus-rise/room-scheme/dist/demo.html
+
 ## Project setup
 ```
 npm install
