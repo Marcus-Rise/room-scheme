@@ -6,6 +6,18 @@
     "email": "ilykonst95@gmail.com",
     "url": "marcus-rise.dev"
   },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:marcus_rise/room-scheme.git"
+  },
+  "main": "./dist/room-scheme.js",
+  "files": [
+    "/dist",
+    "README.md",
+    "LICENSE.md",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target wc --name room-scheme ./src/App.vue",
