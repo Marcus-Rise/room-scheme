@@ -1,9 +1,7 @@
 <template lang="pug">
-    component(
+    component.character(
         :is="type"
-        :x="character.x"
-        :y="character.y"
-        :angle="character.angle"
+        :style="style"
     )
 </template>
 
@@ -32,11 +30,19 @@
 
             return type;
         }
+
+        get style() {
+            return {
+                left: `${this.character.x}px`,
+                bottom: `${this.character.y}px`,
+                transform: `rotate(${this.character.angle}deg)`
+            }
+        }
     }
 </script>
 
 <style lang="scss" scoped>
-    div {
+    .character {
         position: absolute;
     }
 </style>

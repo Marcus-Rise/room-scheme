@@ -1,22 +1,17 @@
 <template lang="pug">
-    div(
-        :style="{ left: `${x}px`, bottom: `${y}px`, }"
-    )
+    .simple-character
 </template>
 
 <script lang="ts">
-    import {Component, Prop, Vue} from "vue-property-decorator";
+    import {Component, Vue} from "vue-property-decorator";
 
     @Component
     export default class SimpleCharacter extends Vue {
-        @Prop() x!: number;
-        @Prop() y!: number;
-        @Prop() angle!: number;
     }
 </script>
 
 <style lang="scss" scoped>
-    div {
+    .simple-character {
         $size: 50px;
 
         width: $size;
