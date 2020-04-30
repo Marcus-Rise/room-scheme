@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const data = require("./src/data.json");
 
