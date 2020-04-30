@@ -24,7 +24,7 @@
 </template>
 
 <script lang="ts">
-    import Vue from 'vue';
+    import Vue from "vue";
     import {Component, Prop} from "vue-property-decorator";
     import {ISchemeDto, Scheme} from "@/models/Scheme";
     import Layout from "@/components/Layout.vue";
