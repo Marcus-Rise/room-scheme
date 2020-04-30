@@ -27,10 +27,10 @@
     import Vue from "vue";
     import {Component, Prop} from "vue-property-decorator";
     import {ISchemeDto, Scheme} from "@/models/Scheme";
-    import Layout from "@/components/Layout.vue";
+    import {Character} from "@/models/Character";
     import CharacterCmpt from "@/components/Character/CharacterCmpt.vue";
     import Choosable from "@/components/Choosable.vue";
-    import {Character} from "@/models/Character";
+    import Layout from "@/components/Layout.vue";
 
     @Component({
         components: {Choosable, CharacterCmpt, Layout}
