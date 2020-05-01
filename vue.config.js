@@ -12,8 +12,8 @@ module.exports = {
                 templateContent: `
 <meta charset="utf-8">
 <title>room-scheme demo</title>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-<script src="./room-scheme.js"></script>
+<script src="https://unpkg.com/vue@2.6.11/dist/vue.min.js"></script>
+<script src="./room-scheme.min.js"></script>
 
 <room-scheme data-scheme='${JSON.stringify(data)}'></room-scheme>`
             })
