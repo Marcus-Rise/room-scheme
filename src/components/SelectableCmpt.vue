@@ -14,7 +14,7 @@
 </script>
 
 <style lang="scss" scoped>
-    .selectable > *:hover {
+    .selectable > div:hover {
         box-shadow: 0 0 13px 5px rgba(0, 0, 0, 0.38);
         cursor: pointer;
     }
