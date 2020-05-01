@@ -1,13 +1,13 @@
 <template lang="pug">
     #app
-        layout(
+        layout-cmpt(
             :width="scheme.width"
             :height="scheme.height"
         )
             template(
                 v-for="item in scheme.characters"
             )
-                selectable(
+                selectable-cmpt(
                     v-if="item.type.name === 'chair'"
                     :key="item.id"
                 )
@@ -27,11 +27,11 @@
     import {Component, Prop} from "vue-property-decorator";
     import {ISchemeDto, Scheme} from "@/models/Scheme";
     import CharacterCmpt from "@/components/Character/CharacterCmpt.vue";
-    import Selectable from "@/components/Selectable.vue";
-    import Layout from "@/components/Layout.vue";
+    import SelectableCmpt from "@/components/SelectableCmpt.vue";
+    import LayoutCmpt from "@/components/LayoutCmpt.vue";
 
     @Component({
-        components: {Selectable, CharacterCmpt, Layout}
+        components: {SelectableCmpt, CharacterCmpt, LayoutCmpt}
     })
     export default class extends Vue {
         @Prop() readonly dataScheme!: string;

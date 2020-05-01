@@ -9,7 +9,7 @@
     import {Component, Vue} from "vue-property-decorator";
 
     @Component
-    export default class Selectable extends Vue {
+    export default class SelectableCmpt extends Vue {
     }
 </script>
 
