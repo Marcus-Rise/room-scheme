@@ -1,25 +1,24 @@
 <template lang="pug">
-    #app
-        layout-cmpt(
-            :width="scheme.width"
-            :height="scheme.height"
+    layout-cmpt(
+        :width="scheme.width"
+        :height="scheme.height"
+    )
+        template(
+            v-for="item in scheme.characters"
         )
-            template(
-                v-for="item in scheme.characters"
+            selectable-cmpt(
+                v-if="item.type.name === 'chair'"
+                :key="item.id"
             )
-                selectable-cmpt(
-                    v-if="item.type.name === 'chair'"
-                    :key="item.id"
-                )
-                    character-cmpt(
-                        :character="item"
-                    )
-
                 character-cmpt(
-                    v-else
                     :character="item"
-                    :key="item.id"
                 )
+
+            character-cmpt(
+                v-else
+                :character="item"
+                :key="item.id"
+            )
 </template>
 
 <script lang="ts">
