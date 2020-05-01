@@ -11,6 +11,17 @@
         "id": 1,
         "name": "simple"
       },
+      "x": 1000,
+      "y": 100,
+      "schemeId": 1,
+      "angle": 0
+    }, {
+      "id": 22,
+      "typeId": 1,
+      "type": {
+        "id": 1,
+        "name": "simple"
+      },
       "x": 100,
       "y": 100,
       "schemeId": 1,
