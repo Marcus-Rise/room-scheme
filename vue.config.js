@@ -2,6 +2,7 @@
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const data = require("./src/data.json");
+const packageData = require("./package.json");
 
 module.exports = {
     configureWebpack: {
@@ -10,12 +11,16 @@ module.exports = {
                 filename: "demo.html",
                 minify: false,
                 templateContent: `
+<head>
 <meta charset="utf-8">
-<title>room-scheme demo</title>
+<title>room-scheme demo v${packageData.version}</title>
 <script src="https://unpkg.com/vue@2.6.11/dist/vue.min.js"></script>
-<script src="./room-scheme.min.js"></script>
+</head>
 
-<room-scheme data-scheme='${JSON.stringify(data)}'></room-scheme>`
+<body>
+<room-scheme data-scheme='${JSON.stringify(data)}'></room-scheme>
+</body>
+`
             })
         ]
     }
