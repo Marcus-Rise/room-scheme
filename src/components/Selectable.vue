@@ -1,5 +1,5 @@
 <template lang="pug">
-    .choosable(
+    .selectable(
         v-on="$listeners"
     )
         slot
@@ -9,12 +9,12 @@
     import {Component, Vue} from "vue-property-decorator";
 
     @Component
-    export default class Choosable extends Vue {
+    export default class Selectable extends Vue {
     }
 </script>
 
 <style lang="scss" scoped>
-    .choosable > *:hover {
+    .selectable > *:hover {
         box-shadow: 0 0 13px 5px rgba(0, 0, 0, 0.38);
         cursor: pointer;
     }

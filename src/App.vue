@@ -7,12 +7,12 @@
             template(
                 v-for="item in scheme.characters"
             )
-                choosable(
+                selectable(
                     v-if="item.type.name === 'chair'"
+                    :key="item.id"
                 )
                     character-cmpt(
                         :character="item"
-                        :key="item.id"
                     )
 
                 character-cmpt(
@@ -27,11 +27,11 @@
     import {Component, Prop} from "vue-property-decorator";
     import {ISchemeDto, Scheme} from "@/models/Scheme";
     import CharacterCmpt from "@/components/Character/CharacterCmpt.vue";
-    import Choosable from "@/components/Choosable.vue";
+    import Selectable from "@/components/Selectable.vue";
     import Layout from "@/components/Layout.vue";
 
     @Component({
-        components: {Choosable, CharacterCmpt, Layout}
+        components: {Selectable, CharacterCmpt, Layout}
     })
     export default class extends Vue {
         @Prop() readonly dataScheme!: string;
