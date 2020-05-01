@@ -33,7 +33,7 @@
     @Component({
         components: {SelectableCmpt, CharacterCmpt, LayoutCmpt}
     })
-    export default class extends Vue {
+    export default class App extends Vue {
         @Prop() readonly dataScheme!: string;
 
         scheme: Scheme = new Scheme();
