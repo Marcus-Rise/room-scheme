@@ -1,9 +1,8 @@
 <template lang="pug">
-    .card.layout
-        .card-body(
-            :style="{width: `${width}px`, height: `${height}px`}"
-        )
-            slot
+    .card.layout(
+        :style="{width: `${width}px`, height: `${height}px`}"
+    )
+        slot
 </template>
 
 <script lang="ts">
@@ -24,10 +23,7 @@
 
     .layout {
         overflow: auto;
-
-        .card-body {
-            position: relative;
-            padding: 0;
-        }
+        position: relative;
+        padding: 0;
     }
 </style>
