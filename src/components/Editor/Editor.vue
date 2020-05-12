@@ -6,6 +6,7 @@
             move-character-controls(
                 :character="selected"
                 @delete="deleteItem(selected)"
+                @add="addItem"
             )
         .col.pl-0
             layout-cmpt(
@@ -33,6 +34,7 @@
     import {Character} from "@/models/Character";
     import MoveCharacterControls from "@/components/Editor/MoveCharacterControls.vue";
     import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
+    import {CharacterType, CharacterTypeEnum} from "@/models/CharacterType";
 
     Vue.component('fa', FontAwesomeIcon);
 
@@ -54,6 +56,21 @@
             if (index > -1) {
                 this.scheme.characters.splice(index, 1);
             }
+        }
+
+        addItem(type: CharacterTypeEnum) {
+            const character: Character = new Character();
+
+            switch (type) {
+                case CharacterTypeEnum.chair:
+                    character.type = new CharacterType("", "chair");
+                    break;
+                case CharacterTypeEnum.simple:
+                    character.type = new CharacterType("", "simple");
+                    break;
+            }
+
+            this.scheme.characters.push(character);
         }
     }
 </script>
