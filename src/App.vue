@@ -29,7 +29,7 @@
         components: {
             CharacterCmpt,
             LayoutCmpt,
-            Editor: () => import(/* webpackChunkName: 'editor' */ "@/components/Editor.vue"),
+            Editor: () => import(/* webpackChunkName: 'editor' */ "@/components/Editor/Editor.vue"),
         }
     })
     export default class App extends Vue {
