@@ -1,5 +1,6 @@
 <template lang="pug">
     .simple-character
+        slot
 </template>
 
 <script lang="ts">

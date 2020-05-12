@@ -5,6 +5,7 @@
         :class="{'selectable': selectable !== false}"
         v-on="$listeners"
     )
+        slot
 </template>
 
 <script lang="ts">

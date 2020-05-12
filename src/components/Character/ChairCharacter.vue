@@ -2,6 +2,7 @@
     .chair-character(
         @click="$emit('chooseChair')"
     )
+        slot
 </template>
 
 <script lang="ts">
