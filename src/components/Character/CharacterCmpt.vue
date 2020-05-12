@@ -2,7 +2,7 @@
     component.character(
         :is="type"
         :style="style"
-        :class="{'selectable': selectable !== false, 'transparent': transparent !== false}"
+        :class="{'selectable': selectable !== false, 'transparent': transparent !== false, 'accent': accent !== false}"
         v-on="$listeners"
     )
         slot
@@ -19,6 +19,7 @@
         @Prop() readonly character!: Character;
         @Prop({default: false}) readonly selectable!: boolean;
         @Prop({default: false}) readonly transparent!: boolean;
+        @Prop({default: false}) readonly accent!: boolean;
 
         get type(): Function {
             let type: Function;
@@ -58,5 +59,9 @@
 
     .transparent {
         opacity: 0.7;
+    }
+
+    .accent {
+        filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.7));
     }
 </style>
