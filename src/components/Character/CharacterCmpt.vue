@@ -2,7 +2,7 @@
     component.character(
         :is="type"
         :style="style"
-        :class="{'selectable': selectable !== false}"
+        :class="{'selectable': selectable !== false, 'transparent': transparent !== false}"
         v-on="$listeners"
     )
         slot
@@ -18,6 +18,7 @@
     export default class CharacterCmpt extends Vue {
         @Prop() readonly character!: Character;
         @Prop({default: false}) readonly selectable!: boolean;
+        @Prop({default: false}) readonly transparent!: boolean;
 
         get type(): Function {
             let type: Function;
@@ -53,5 +54,9 @@
     .selectable:hover {
         box-shadow: 0 0 13px 5px rgba(0, 0, 0, 0.38);
         cursor: pointer;
+    }
+
+    .transparent {
+        opacity: 0.7;
     }
 </style>
