@@ -1,5 +1,7 @@
 <template lang="pug">
-    .chair-character
+    .chair-character(
+        @click="$emit('chooseChair')"
+    )
 </template>
 
 <script lang="ts">

@@ -3,6 +3,7 @@
         :is="type"
         :style="style"
         :class="{'selectable': !!selectable}"
+        v-on="$listeners"
     )
 </template>
 
