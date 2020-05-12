@@ -2,6 +2,7 @@
     component.character(
         :is="type"
         :style="style"
+        :class="{'selectable': !!selectable}"
     )
 </template>
 
@@ -14,6 +15,7 @@
     @Component
     export default class CharacterCmpt extends Vue {
         @Prop() readonly character!: Character;
+        @Prop({default: false}) readonly selectable!: boolean;
 
         get type(): Function {
             let type: Function;
@@ -44,5 +46,10 @@
 <style lang="scss" scoped>
     .character {
         position: absolute;
+    }
+
+    .selectable:hover {
+        box-shadow: 0 0 13px 5px rgba(0, 0, 0, 0.38);
+        cursor: pointer;
     }
 </style>
