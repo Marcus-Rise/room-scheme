@@ -3,6 +3,7 @@
         :width="scheme.width"
         :height="scheme.height"
     )
+        span editor: {{editor !== false ? 'yes' : 'no'}}
         template(
             v-for="item in scheme.characters"
         )
