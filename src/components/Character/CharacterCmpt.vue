@@ -2,7 +2,7 @@
     component.character(
         :is="type"
         :style="style"
-        :class="{'selectable': !!selectable}"
+        :class="{'selectable': selectable !== false}"
         v-on="$listeners"
     )
 </template>
