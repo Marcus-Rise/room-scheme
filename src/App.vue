@@ -1,24 +1,21 @@
 <template lang="pug">
-    layout-cmpt(
-        :width="scheme.width"
-        :height="scheme.height"
-    )
-        template(
-            v-for="item in scheme.characters"
+    div
+        layout-cmpt(
+            v-if="editor === false"
+            :width="scheme.width"
+            :height="scheme.height"
         )
-            selectable-cmpt(
-                v-if="item.type.name === 'chair'"
-                :key="item.id"
-            )
-                character-cmpt(
-                    :character="item"
-                )
-
             character-cmpt(
-                v-else
+                v-for="item in scheme.characters"
+                :selectable="item.type.name === 'chair'"
                 :character="item"
                 :key="item.id"
+                @chooseChair="$emit('chooseChair', item)"
             )
+        editor(
+            v-else
+            :scheme="scheme"
+        )
 </template>
 
 <script lang="ts">
@@ -26,14 +23,18 @@
     import {Component, Prop} from "vue-property-decorator";
     import {ISchemeDto, Scheme} from "@/models/Scheme";
     import CharacterCmpt from "@/components/Character/CharacterCmpt.vue";
-    import SelectableCmpt from "@/components/SelectableCmpt.vue";
     import LayoutCmpt from "@/components/LayoutCmpt.vue";
 
     @Component({
-        components: {SelectableCmpt, CharacterCmpt, LayoutCmpt}
+        components: {
+            CharacterCmpt,
+            LayoutCmpt,
+            Editor: () => import(/* webpackChunkName: 'editor' */ "@/components/Editor/Editor.vue"),
+        }
     })
     export default class App extends Vue {
         @Prop() readonly dataScheme!: string;
+        @Prop({default: false}) readonly editor!: boolean;
 
         scheme: Scheme = new Scheme();
 

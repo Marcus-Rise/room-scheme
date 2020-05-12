@@ -25,3 +25,9 @@ export type ICharacterTypeDto = Readonly<{
     "id": number;
     "name": string;
 }>;
+
+export enum CharacterTypeEnum {
+    chair = "Стул",
+    simple = "Блок",
+}
+
