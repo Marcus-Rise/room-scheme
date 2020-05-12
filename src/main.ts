@@ -8,6 +8,7 @@ new Vue({
   render: h => h(App, {
     attrs: {
       "data-scheme": JSON.stringify(data),
+      "editor": true
     }
   })
 }).$mount('#app')

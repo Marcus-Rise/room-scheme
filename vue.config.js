@@ -19,6 +19,7 @@ module.exports = {
 
 <body>
 <room-scheme data-scheme='${JSON.stringify(data)}'></room-scheme>
+<room-scheme data-scheme='${JSON.stringify(data)}' editor></room-scheme>
 </body>
 `
             })

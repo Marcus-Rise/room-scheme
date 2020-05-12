@@ -34,6 +34,7 @@
     })
     export default class App extends Vue {
         @Prop() readonly dataScheme!: string;
+        @Prop({default: false}) readonly editor!: boolean;
 
         scheme: Scheme = new Scheme();
 
