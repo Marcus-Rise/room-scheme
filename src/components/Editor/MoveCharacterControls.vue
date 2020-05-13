@@ -4,39 +4,39 @@
             button.btn.btn-light(
                 @click="character.angle++"
             )
-                fa(
+                fa.icon(
                     :icon="rotateRightIcon"
                 )
             button.btn.btn-light(
                 @click="character.angle--"
             )
-                fa(
+                fa.icon(
                     :icon="rotateLeftIcon"
                 )
         .btn-group
             button.btn.btn-light(
                 @click="character.x--"
             )
-                fa(
+                fa.icon(
                     :icon="moveLeftIcon"
                 )
             button.btn.btn-light(
                 @click="character.x++"
             )
-                fa(
+                fa.icon(
                     :icon="moveRightIcon"
                 )
         .btn-group
             button.btn.btn-light(
                 @click="character.y++"
             )
-                fa(
+                fa.icon(
                     :icon="moveUpIcon"
                 )
             button.btn.btn-light(
                 @click="character.y--"
             )
-                fa(
+                fa.icon(
                     :icon="moveDownIcon"
                 )
         .input-group
@@ -61,7 +61,7 @@
                     button.btn.btn-light.dropdown-toggle(
                         @click="on"
                     )
-                        fa.mr-2(
+                        fa.icon.mr-2(
                             :icon="addIcon"
                         )
                         | Добавить
@@ -73,7 +73,7 @@
             button.btn.btn-light(
                 @click="$emit('delete')"
             )
-                fa.mr-2(
+                fa.icon.mr-2(
                     :icon="deleteIcon"
                 )
                 | Удалить
@@ -119,6 +119,13 @@
     .move-controlls {
         width: 100%;
         height: 100%;
+    }
+
+    .icon {
+        $size: 15px;
+
+        width: $size;
+        height: $size;
     }
 
 </style>
