@@ -1,6 +1,6 @@
 {
   "name": "@marcus-rise/room-scheme",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": {
     "name": "Ilya Konstantintov",
     "email": "ilykonst95@gmail.com",
@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --report --target wc --name room-scheme ./src/App.vue",
+    "build": "vue-cli-service build --report --target wc-async --name room-scheme ./src/App.vue",
     "test:unit": "vue-cli-service test:unit",
     "test:unit:watch": "vue-cli-service test:unit --watch",
     "lint": "vue-cli-service lint",
